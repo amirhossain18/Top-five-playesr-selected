@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&family=Noto+Sans&family=Poppins&family=Raleway:ital,wght@1,300&family=Rubik+Dirt&family=Rubik+Iso&family=Teko&display=swap');
+
+.main-text {
+    font-family: 'Acme', sans-serif;
+font-family: 'Teko', sans-serif;
+color:white;
+font-size: 80px;
+}
+
+.header {
+    background-color: #207398;
+}
+
+.select-btn{
+    background-color: red;
+    border: none;
+    width:240px;
+    border-radius:5px;
+    margin:2px;
+    padding:5px;
+    align-items: center;
+    justify-content: center;
+
+}
