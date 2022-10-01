@@ -4,19 +4,35 @@ function playerNameget(playerbtnID){
     const playerName=playerNameID.innerText;
     console.log(playerName);
     const toplist= document.getElementById('top-list')
+    const selectedPlayerNum=toplist.childNodes.length;
+    if(selectedPlayerNum >5){
+      alert('sorry')
+      return;
+    }
     const li =document.createElement('li');
     li.innerText= playerName;
     toplist.appendChild(li);
-    const item= document.getElementById('top-list')
-  const selectedPlayerNum=(item.childElementCount);
-}
+    console.log(selectedPlayerNum)
 
+}
+// function dis(id){
+//   const item= document.getElementById('top-list')
+
+// if(selectedPlayerNum>5){
+//   const btn= document.getElementById(id)
+//   btn.disabled = true;
+// }
+
+// }
 
 // -------------------- create disabled function
 function disabledee(id){
     const btn= document.getElementById(id)
     btn.disabled = true;
-    btn.style.backgroundColor='gray';
+    btn.style.backgroundColor='gray'; 
+    // items=document.getElementById('top-list ').childNodes.length;
+    // console.log(items);
+    // dis()
 }
 // -------------------- 
 function totalPlayerCost(){

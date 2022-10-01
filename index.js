@@ -7,6 +7,7 @@
 document.getElementById('btn-sakib').addEventListener("click", function() {
     const sakib= playerNameget('player-sakib')
     disabledee('btn-sakib')
+   
  })
 
 
