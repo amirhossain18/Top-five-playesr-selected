@@ -12,13 +12,30 @@ font-size: 80px;
 }
 
 .select-btn{
-    background-color: red;
+    background-color: #207398;
     border: none;
     width:240px;
     border-radius:5px;
     margin:2px;
+    color:white;
     padding:5px;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 
+} 
+
+
+.select-btn:checked{
+    background:rgb(158, 158, 156);
 }
+
+
+ .select-btn:checked{
+    background:olive;
+ }
+
+ .new-div{
+    background-color: #207398;
+    color: azure;
+ }
+
