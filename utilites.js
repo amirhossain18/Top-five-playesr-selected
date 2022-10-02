@@ -10,7 +10,6 @@ function totalCost(){
   const coachCostID= document.getElementById('coach-field');
   const coachCostString= coachCostID.value
   const coachCost=  parseInt(coachCostString);
-  console.log( playerCostall)
   const allEveryCost=  playerCostall+coachCost+managerCost;
    totalExpanseID.innerText=allEveryCost;
 }

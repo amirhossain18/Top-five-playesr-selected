@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
     <title>Super Five Bangladesh</title>
 </head>
 <body>
 
-  <!-------------------------------------------------------- Header Section start -->
+  <!-------------------------- Header Section start -->
   <header>
     <section class="header"  >
         <div class="row ">
@@ -40,7 +41,7 @@
                          <div class="row mt-2 gap-2 mb-5">
                           
                           <div class="col-lg-4 col-md-6 mb-2">
-                          <div class=" border border-dark">
+                          <div class=" border border-info rounded">
                             <img class="img-fluid mt-2" src="image/players/sakib.jpg" alt="">
                           <h2  class="text-center">Sakib Al Hasan</h2>
                           <h6 class="text-center" > 116W  <span> 2.6k Run</span></h6>
@@ -50,7 +51,7 @@
                           
 
                           <div class="col-lg-4 col-md-6 mb-2">
-                            <div class=" border border-dark">
+                            <div class=" border border-info rounded">
                             <img class="img-fluid mt-2" src="image/players/Tamim.jpg" alt="">
                             <h2  class="text-center">Tamim Iqubal</h2>
                             <h6 class="text-center" > 103W  <span> 2.2k Run</span></h6>
@@ -59,7 +60,7 @@
                         </div>
 
                         <div class="col-lg-4 col-md-6 gap-2">
-                          <div class=" border border-dark">
+                          <div class=" border border-info rounded">
                               <img class="img-fluid mt-2" src="image/players/Fiz.jpg" alt="">
                               <h2   class="text-center">fiz Rahman</h2>
                               <h6 class="text-center" > 81W  <span> 800 Run</span></h6>
@@ -69,7 +70,7 @@
 
                             
                         <div class="col-lg-4 col-md-6 gap-2 mb-2">
-                          <div class=" border border-dark">
+                          <div class=" border border-info rounded">
                                 <img class="img-fluid mt-2" src="image/players/Mahmudullah.jpg" alt="">
                                 <h2   class="text-center">Mahmudullah</h2>
                                 <h6 class="text-center" > 88  <span> 1.9k Run</span></h6>
@@ -79,7 +80,7 @@
 
                                 
                         <div class="col-lg-4 col-md-6 gap-2">
-                          <div class=" border border-dark">
+                          <div class=" border border-info rounded">
                                   <img class="img-fluid mt-2" src="image/players/Mas.jpg" alt="">
                                   <h2   class="text-center">Masrafi Mortoza</h2>
                                   <h6 class="text-center" > 185W  <span> 3.2k Run</span></h6>
@@ -89,7 +90,7 @@
 
                                   
                         <div class="col-lg-4 col-md-6 gap-2">
-                          <div class=" border border-dark">
+                          <div class=" border border-info rounded">
                                     <img class="img-fluid mt-2" src="image/players/rubel.jpg" alt="">
                                     <h2   class="text-center">Rubel Hossain</h2>
                                     <h6 class="text-center" > 122W  <span> 900 Run</span></h6>
@@ -99,7 +100,7 @@
 
                                    
                         <div class="col-lg-4 col-md-6 gap-2">
-                          <div class=" border border-dark">
+                          <div class=" border border-info rounded">
                                       <img class="img-fluid mt-2" src="image/players/Sabbir.jpg" alt="">
                                       <h2  class="text-center">Sabbir Rahman</h2>
                                       <h6 class="text-center" > 10W  <span> 0.9k Run</span></h6>
@@ -109,7 +110,7 @@
 
                                       
                         <div class="col-lg-4 col-md-6 gap-2">
-                          <div class=" border border-dark">
+                          <div class=" border border-info rounded">
                                         <img class="img-fluid mt-2" src="image/players/sommo.jpg" alt="">
                                         <h2   class="text-center">Sommo Sarkar</h2>
                                         <h6 class="text-center" > 30W  <span> 1.2k Run</span></h6>
@@ -119,7 +120,7 @@
 
                                         
                         <div class="col-lg-4 col-md-6 gap-2">
-                          <div class=" border border-dark">
+                          <div class=" border border-info rounded">
                                           <img class="img-fluid mt-2" src="image/players/musfiq.jpg" alt="">
                                           <h2  class="text-center">Musfiq Rahim</h2>
                                           <h6 class="text-center" > 103W  <span> 2.2k Run</span></h6>
@@ -133,20 +134,20 @@
           <div class="col-lg-3 mt-2 selected-item align-self-center ">     
               <!------------------------------------ selected player list section start -->
             <div id="top-five " class="col-lg-12 new-div">
-              <h1> selected V</h1>
+              <h1 class="text-center"> selected V</h1>
              <ol id="top-list"></ol>
             </div>
               <!---------------------------------- selected player list section end -->
                   <!--------------------------------------- budget section start -->
             <div class="col-lg-12 new-div1 ">
-              <h2> Budget</h2>
+              <h2  class="text-center"> Budget</h2>
          <h5 class="box-size">  per player   <input  class="w-50" id="per-player-cost-field" type="text"></h5>
              <button id="player-cost-btn" class="two-btn " > Submitted</button>
-             <h5>Player Expenses $<span  id="total-player-cost" >00</span> </h5>
+             <h5>Player Expenses $<span class="text-danger"  id="total-player-cost" >00</span> </h5>
              <h5  class="box-size">  manager Cost   <input  class="box-style" id="manegar-field" type="text"></h5>
              <h5 class="" >  coach Cost   <input   class="box-style"id="coach-field" type="text"></h5>
              <button id="Calculate-Total-Cost" class=" two-btn " > Calculate Total</button>
-             <h5>Total Expenses $<span class="text-black" id="total-expense">00</span> </h5>
+             <h5>Total Expenses $<span class="text-danger " id="total-expense">00</span> </h5>
             </div>
 <!------------------------------------------------------ budget section end -->
           </div>
@@ -155,15 +156,9 @@
 
 
       </section>
-
-
-
-
-
-
-
-
   </main>
+
+  
 <!-------------------------------------------------------------------- footer -->
 
 <footer  align="center ">
