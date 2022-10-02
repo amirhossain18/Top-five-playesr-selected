@@ -1,59 +1,44 @@
 
+// ------------------- get player name from list &&  set top five
 
-// ---------------------get player name and set order list use function
+const palyerName= document.getElementsByClassName('player-btn')
+for(player of palyerName){
+    // console.log(player);
+        player.addEventListener("click", function (event) {
+         const playerNameText= event.target.parentNode.childNodes[3].innerText;
+         const playerbutton= event.target.parentNode.childNodes[7];
+         const setfieldName = document.getElementById('top-list');        
+         const playerNumber =(setfieldName.childNodes.length)
+      
+                 if(playerNumber >4){
+                      alert('You cannot select more than five')
+                         return;   
+                 }
+           const li = document.createElement('li');
+           li.innerText=playerNameText;
+           setfieldName.appendChild(li);
+           playerbutton.setAttribute("disabled", true)    
+           playerbutton.style.backgroundColor='gray'
+          
+    })
+}
 
-
-
-document.getElementById('btn-sakib').addEventListener("click", function() {
-    const sakib= playerNameget('player-sakib')
-    disabledee('btn-sakib')
-   
- })
-
-
-document.getElementById('btn-tamim').addEventListener("click", function() {
-     const tamim= playerNameget('player-tamim');
-     disabledee('btn-tamim')    
- })
- document.getElementById('btn-fiz').addEventListener("click", function() {
-     const MusTafiz= playerNameget('player-fiz')
-     disabledee('btn-fiz')
-   
- })
- document.getElementById('btn-mahmudullah').addEventListener("click", function() {
-     const Mahmudullah= playerNameget('player-mahmudullah')
-     disabledee('btn-mahmudullah')
- })
- document.getElementById('btn-mas').addEventListener("click", function() {
-     const Masrafi= playerNameget('player-mas')
-     disabledee('btn-mas')
- })
- document.getElementById('btn-rubel').addEventListener("click", function() {
-     const Rubel= playerNameget('player-rubel')
-     disabledee('btn-rubel')
- })
- document.getElementById('btn-sabbir').addEventListener("click", function() {
-     const sabbir= playerNameget('player-sabbir')
-     disabledee('btn-sabbir')
- })
+// ------------------------------------------calculate player const
+const totalPlayercostBtn= document.getElementById('player-cost-btn')
+totalPlayercostBtn.addEventListener('click', function (event) {
+  const playerCostFieldID= document.getElementById('per-player-cost-field');
+  const perPlayerCost = playerCostFieldID.value
+  const setfieldName = document.getElementById('top-list');
+  const playerNumber =setfieldName.childNodes.length
+  const playercost= playerNumber *  perPlayerCost
+  const setPlayerCost= document.getElementById('total-player-cost')
+  setPlayerCost.innerText= playercost
+    
  
- document.getElementById('btn-sommo').addEventListener("click", function() {
-     const sommo= playerNameget('player-sommo')
-     disabledee('btn-sommo')
- })
- 
- document.getElementById('btn-musi').addEventListener("click", function() {
-     const Musfiq= playerNameget('player-musi')
-     disabledee('btn-musi')
- })
-// ----------------------------- calcualate total player cost by using function
-
- document.getElementById('player-cost-btn').addEventListener ("click", function() {
-    totalPlayerCost()
-
 })
 
-//  -----------------------------------calculate total cost function
+
+   //  -----------------------------------call total cost function
 document.getElementById('Calculate-Total-Cost').addEventListener ("click", function() {
     totalCost()
 })

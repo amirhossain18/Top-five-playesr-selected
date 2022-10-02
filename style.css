@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&family=Noto+Sans&family=Poppins&family=Raleway:ital,wght@1,300&family=Rubik+Dirt&family=Rubik+Iso&family=Teko&display=swap');
-
+main{
+    background-color:rgb(210, 218, 226)
+}
 .main-text {
     font-family: 'Acme', sans-serif;
 font-family: 'Teko', sans-serif;
 color:white;
 font-size: 80px;
 }
-
+/* .card-design{
+    margin:2px;
+    width: 90%
+} */
 .header {
     background-color: #207398;
 }
@@ -23,23 +28,59 @@ font-size: 80px;
     justify-content: center; 
 
 } 
-
-
+.two-btn{
+    background-color: #207398;
+    border: none;
+    width:215px;
+    border-radius:5px;
+    margin:2px;
+    color:white;
+    padding:5px;
+    align-items: center;
+    justify-content: center; 
+}
 .select-btn:checked{
     background:rgb(158, 158, 156);
 }
 
 
- .select-btn:checked{
-    background:olive;
+ footer{
+    background-color: #6997ac;
  }
 
  .new-div{
-    background-color: #207398;
+    margin-top: 2px;
+    background-color: #6997ac;
+    height:200px;
     color: azure;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+ }
+ .new-div1{
+    margin-top: 5px;
+    background-color: #6997ac;
+    height:400px;
+    color: azure;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
  }
 
- .gap{
-  
-    margin: 5px 5px 5px 5px;
+
+
+
+ @media only screen and (max-width: 600px) {
+    .row {
+       
+        display: flex;
+     
+        margin-right: -15px;
+        margin-left: -15px;
+        flex-direction: column;
+    }
+    .main-text {
+       
+        font-size: 27px;
+    }
+          
+
  }
